@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5fafa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mbrs.Transaction">
+   <children>
+      <Label fx:id="lblTransaction" alignment="CENTER" layoutX="229.0" layoutY="48.0" prefHeight="49.0" prefWidth="345.0" style="-fx-background-color: #1fcccc;" text="Transaction History" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblShowHistory" alignment="CENTER" layoutX="164.0" layoutY="117.0" prefHeight="34.0" prefWidth="236.0" style="-fx-background-color: #f5fafa;" text="Show History">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="chcAddRecharge" layoutX="465.0" layoutY="121.0" prefWidth="150.0" />
+      <TableView fx:id="tblview" editable="true" layoutX="13.0" layoutY="179.0" prefHeight="409.0" prefWidth="777.0">
+        <columns>
+          <TableColumn fx:id="tblCol1" prefWidth="215.0" text="" />
+            <TableColumn fx:id="tblCol2" prefWidth="144.0" text="" />
+          <TableColumn fx:id="tblCol3" minWidth="0.0" prefWidth="153.0" text="" />
+            <TableColumn fx:id="tblCol4" prefWidth="138.0" text="" />
+            <TableColumn fx:id="tblCol5" minWidth="0.0" prefWidth="125.0" text="" />
+        </columns>
+      </TableView>
+      <Button fx:id="btBack" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#gotoHome" prefHeight="48.0" prefWidth="800.0" style="-fx-background-color: #686e6c;" text="Back" textFill="#28dceb">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="backImage" fitHeight="34.0" fitWidth="34.0" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

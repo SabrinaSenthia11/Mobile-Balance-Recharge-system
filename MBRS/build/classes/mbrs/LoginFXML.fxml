@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="317.0" prefWidth="385.0"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mbrs.Login">
+    <children>
+        <TextField fx:id="uNameField" layoutX="118.0" layoutY="93.0" promptText="Username" />
+      <PasswordField fx:id="uPassField" layoutX="119.0" layoutY="159.0" promptText="Password" />
+        <Button fx:id="gotoAdd" layoutX="167.0" layoutY="221.0" onAction="#gotoAddBalance" text="Login" />
+        <Label fx:id="label" layoutX="155.0" layoutY="185.0" minHeight="16" minWidth="69" textFill="RED" />
+      <Label fx:id="label1" layoutX="155.0" layoutY="118.0" minHeight="16" minWidth="69" textFill="RED" />
+    </children>
+</AnchorPane>

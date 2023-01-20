@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fca862;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mbrs.Home">
+   <children>
+      <Button fx:id="btnCheckBal" layoutX="240.0" layoutY="118.0" mnemonicParsing="false" onAction="#showBalance" prefHeight="44.0" prefWidth="320.0" text="Check Balance" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddBal" layoutX="240.0" layoutY="232.0" mnemonicParsing="false" onAction="#gotoAddBalance" prefHeight="44.0" prefWidth="320.0" text="Add Balance" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRecharge" layoutX="240.0" layoutY="353.0" mnemonicParsing="false" onAction="#gotoRecharge" prefHeight="44.0" prefWidth="320.0" text="Recharge" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTransaction" layoutX="240.0" layoutY="469.0" mnemonicParsing="false" onAction="#gotoTransaction" prefHeight="44.0" prefWidth="320.0" text="Transaction History" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLogout" layoutX="718.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoLogin" prefHeight="26.0" prefWidth="68.0" text="Logout">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

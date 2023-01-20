@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #efaaff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mbrs.Recharge">
+   <children>
+      <Label fx:id="lblAmount" layoutX="144.0" layoutY="195.0" prefHeight="21.0" prefWidth="131.0" text="Amount">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblContact" layoutX="139.0" layoutY="100.0" prefHeight="39.0" prefWidth="141.0" text="Contact" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblType" layoutX="144.0" layoutY="270.0" prefHeight="21.0" prefWidth="131.0" text="Type">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMobileOperator" layoutX="144.0" layoutY="343.0" prefHeight="32.0" prefWidth="209.0" text="Mobile Operator">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAmount" layoutX="362.0" layoutY="196.0" prefHeight="31.0" prefWidth="263.0" promptText="Enter Amount" />
+      <ChoiceBox fx:id="chcType" layoutX="362.0" layoutY="270.0" prefHeight="31.0" prefWidth="263.0" />
+      <ChoiceBox fx:id="chcMobileOperator" layoutX="362.0" layoutY="344.0" prefHeight="31.0" prefWidth="263.0" />
+      <Button fx:id="btmSend" layoutX="687.0" layoutY="538.0" mnemonicParsing="false" onAction="#loadMoney" prefHeight="48.0" prefWidth="100.0" text="Send">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btmBack" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#gotoHome" prefHeight="48.0" prefWidth="801.0" style="-fx-background-color: #686e6c;" text="Back" textFill="#bd69d0">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="backImage" fitHeight="39.0" fitWidth="43.0" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="txtContNum" layoutX="362.0" layoutY="104.0" prefHeight="31.0" prefWidth="263.0" promptText="Enter Contact Number" />
+      <PasswordField fx:id="Password" layoutX="362.0" layoutY="427.0" prefHeight="32.0" prefWidth="263.0" promptText="Password" />
+      <Label fx:id="lblPass" layoutX="144.0" layoutY="425.0" text="Enter Password">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWarning" alignment="CENTER" layoutX="204.0" layoutY="503.0" prefHeight="31.0" prefWidth="398.0" textFill="RED">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

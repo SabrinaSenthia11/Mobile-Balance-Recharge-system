@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: radial-gradient(center 50% 50%, radius 50%, #FFFFFF33, #00000033);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mbrs.AddBalance">
+   <children>
+      <Label fx:id="Addbalance" layoutX="265.0" layoutY="58.0" text="Add Balance" textAlignment="CENTER" textFill="#111011">
+         <font>
+            <Font name="Bauhaus 93" size="48.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="selectsim" layoutX="327.0" layoutY="154.0" prefHeight="25.0" prefWidth="243.0" />
+      <TextField fx:id="inputnumber" layoutX="329.0" layoutY="222.0" prefHeight="32.0" prefWidth="243.0" promptText="Enter Account Number" />
+      <Label id="select sim" fx:id="Givennum" cache="true" layoutX="118.0" layoutY="222.0" text="Account Number">
+         <effect>
+            <ColorAdjust brightness="-1.0" hue="-0.59" saturation="-0.48" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label id="select sim" fx:id="Paymentmethod" cache="true" layoutX="115.0" layoutY="150.0" opacity="0.85" text="Payment Method">
+         <effect>
+            <ColorAdjust brightness="-1.0" hue="-0.59" saturation="-0.48" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amount" layoutX="329.0" layoutY="290.0" prefHeight="32.0" prefWidth="243.0" promptText="Amount" />
+      <PasswordField fx:id="Password" layoutX="329.0" layoutY="350.0" prefHeight="32.0" prefWidth="243.0" promptText="Password" />
+      <Button fx:id="btnSubmit" layoutX="359.0" layoutY="483.0" mnemonicParsing="false" onAction="#subInfo" style="-fx-alignment: DIMGRAY;" text="Submit">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="Back" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#gotoHome" prefHeight="44.0" prefWidth="800.0" style="-fx-background-color: #686e6c;" text="Back">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.48095238095238096" startY="1.0">
+               <stops>
+                  <Stop color="#b9b9b9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <graphic>
+            <ImageView fx:id="backImage" fitHeight="44.0" fitWidth="44.0" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="lblWarning" alignment="CENTER" layoutX="179.0" layoutY="413.0" prefHeight="43.0" prefWidth="475.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label id="select sim" fx:id="Givennum1" cache="true" layoutX="205.0" layoutY="284.0" text="Amount">
+         <effect>
+            <ColorAdjust brightness="-1.0" hue="-0.59" saturation="-0.48" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label id="select sim" fx:id="Givennum11" cache="true" layoutX="191.0" layoutY="350.0" text="Password">
+         <effect>
+            <ColorAdjust brightness="-1.0" hue="-0.59" saturation="-0.48" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
